@@ -33,17 +33,15 @@ const LandingScreen = ({ go }) => {
 
               <div className="mt-5 space-y-2.5">
                 <BigButton tone="sky" icon="mic" onClick={() => go('voice')}>{t.startVoice}</BigButton>
-                <BigButton tone="ghost" icon="camera" onClick={() => go('upload')}>{t.uploadDoc}</BigButton>
               </div>
             </div>
           </div>
         </section>
 
         {/* THREE PILLAR CARDS */}
-        <section className="grid grid-cols-3 gap-2.5 mb-5">
+        <section className="grid grid-cols-2 gap-2.5 mb-5">
           {[
             { icon: 'mic', label: t.speak,     sub: t.speakDesc,     tone: 'sky'  },
-            { icon: 'scan-text', label: t.understand, sub: t.understandDesc, tone: 'mint' },
             { icon: 'route', label: t.getGuided, sub: t.guidedDesc, tone: 'navy' },
           ].map((c, i) => (
             <div key={i} className="bg-white rounded-2xl border border-paper-200 shadow-soft p-3 text-center">
@@ -71,7 +69,7 @@ const LandingScreen = ({ go }) => {
               title={t[a.key]}
               onClick={() => {
                 if (a.id === 'emergencyHelp') go('emergency');
-                else if (a.id === 'prepDocs' || a.id === 'understandRx') go('upload');
+                else if (a.id === 'prepDocs' || a.id === 'understandRx') go('checklist');
                 else if (a.id === 'bookAppt' || a.id === 'findDept' || a.id === 'helpNow') go('checklist');
                 else go('voice');
               }}

@@ -112,7 +112,6 @@ const BottomNav = ({ current, go }) => {
   const items = [
     { id: 'home',     label: t.home,     icon: 'house' },
     { id: 'voice',    label: t.voice,    icon: 'mic' },
-    { id: 'upload',   label: t.docs,     icon: 'file-text' },
     { id: 'emergency', label: t.sos,     icon: 'siren' },
     { id: 'settings', label: t.settings, icon: 'settings-2' },
   ];

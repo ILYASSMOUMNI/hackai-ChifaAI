@@ -30,9 +30,8 @@ const App = () => {
   const navTab = ({
     home: 'home',
     voice: 'voice',
-    upload: 'upload',
-    checklist: 'upload',
-    guidance: 'upload',
+    checklist: 'home',
+    guidance: 'home',
     emergency: 'emergency',
     settings: 'settings',
   })[screen] || 'home';
@@ -40,7 +39,6 @@ const App = () => {
   const screens = {
     home:      <LandingScreen   go={setScreen} />,
     voice:     <VoiceScreen     go={setScreen} />,
-    upload:    <UploadScreen    go={setScreen} />,
     checklist: <ChecklistScreen go={setScreen} />,
     guidance:  <GuidanceScreen  go={setScreen} />,
     emergency: <EmergencyScreen go={setScreen} />,
@@ -100,7 +98,6 @@ const ChifaaTweaks = ({ t, setTweak }) => (
         options={[
           { value: 'home',      label: 'Landing' },
           { value: 'voice',     label: 'Voice assistant' },
-          { value: 'upload',    label: 'Document upload' },
           { value: 'checklist', label: 'Procedure checklist' },
           { value: 'guidance',  label: 'Patient guidance' },
           { value: 'emergency', label: 'Emergency' },
