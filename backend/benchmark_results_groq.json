@@ -1,0 +1,134 @@
+{
+  "provider": "groq",
+  "accuracy": 72.22222222222221,
+  "correct": 13,
+  "total": 18,
+  "cases": [
+    {
+      "text": "3endi wajja3 f sdar w so3oba f tnafes",
+      "lang": "darija",
+      "expected": "high",
+      "got": "high",
+      "correct": true
+    },
+    {
+      "text": "ma kantnafes mzyan wa sdar ta3 li",
+      "lang": "darija",
+      "expected": "high",
+      "got": "high",
+      "correct": true
+    },
+    {
+      "text": "wqa3 wa mfqod l-wa3i",
+      "lang": "darija",
+      "expected": "high",
+      "got": "high",
+      "correct": true
+    },
+    {
+      "text": "عندي ألم في الصدر وصعوبة في التنفس",
+      "lang": "ar",
+      "expected": "high",
+      "got": "high",
+      "correct": true
+    },
+    {
+      "text": "douleur thoracique et difficulté à respirer",
+      "lang": "fr",
+      "expected": "high",
+      "got": "high",
+      "correct": true
+    },
+    {
+      "text": "dam bzzaf khrej mn jrh",
+      "lang": "darija",
+      "expected": "high",
+      "got": "high",
+      "correct": true
+    },
+    {
+      "text": "3endi skhana w ras",
+      "lang": "darija",
+      "expected": "medium",
+      "got": "high",
+      "correct": false
+    },
+    {
+      "text": "wajja3 ras w ka7 mn 3 iyam",
+      "lang": "darija",
+      "expected": "medium",
+      "got": "medium",
+      "correct": true
+    },
+    {
+      "text": "3endi is7al w qyah men s-sbah",
+      "lang": "darija",
+      "expected": "medium",
+      "got": "medium",
+      "correct": true
+    },
+    {
+      "text": "عندي حمى وصداع منذ يومين",
+      "lang": "ar",
+      "expected": "medium",
+      "got": "medium",
+      "correct": true
+    },
+    {
+      "text": "j'ai de la fièvre depuis deux jours",
+      "lang": "fr",
+      "expected": "medium",
+      "got": "medium",
+      "correct": true
+    },
+    {
+      "text": "d3if w ma kaklach w 3endi ghthyan",
+      "lang": "darija",
+      "expected": "medium",
+      "got": "medium",
+      "correct": true
+    },
+    {
+      "text": "fin nqdr njiw l-sbitar l-qrib",
+      "lang": "darija",
+      "expected": "low",
+      "got": "high",
+      "correct": false
+    },
+    {
+      "text": "chno nakhod men dwa l-broud",
+      "lang": "darija",
+      "expected": "low",
+      "got": "medium",
+      "correct": false
+    },
+    {
+      "text": "كيف يمكنني الوصول إلى أقرب مستشفى",
+      "lang": "ar",
+      "expected": "low",
+      "got": "medium",
+      "correct": false
+    },
+    {
+      "text": "où est la pharmacie la plus proche",
+      "lang": "fr",
+      "expected": "low",
+      "got": "low",
+      "correct": true
+    },
+    {
+      "text": "wach khass nakhod doctor wla pharmacie",
+      "lang": "darija",
+      "expected": "low",
+      "got": "medium",
+      "correct": false
+    },
+    {
+      "text": "chno mane3 nshreb Doliprane",
+      "lang": "darija",
+      "expected": "low",
+      "got": "low",
+      "correct": true
+    }
+  ]
+}
